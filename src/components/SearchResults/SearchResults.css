@@ -1,0 +1,51 @@
+#search-results {
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 0.625rem;
+    border: 0.125rem solid #66cc00;
+    margin-bottom: 1.5625rem;
+}
+
+#search-results h2 {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    margin: 0.625rem;
+    padding: 0;
+}
+
+/*Begin mobile.*/
+@media only screen and (max-width: 800px) {
+    #search-results {
+        width: 97%;
+        max-width: 22.5rem;
+    }
+
+    #search-results h2 {
+        font-size: 1.625rem;
+    }
+}
+/*End mobile.*/
+
+/*Begin tablet.*/
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    #search-results {
+        width: 47%;
+    }
+
+    #search-results h2 {
+        font-size: 1.6875rem;
+    }
+}
+/*End tablet.*/
+
+/*Begin desktop.*/
+@media only screen and (min-width: 1201px) {
+    #search-results {
+        width: 47%;
+    }
+
+    #search-results h2 {
+        font-size: 1.875rem;
+    }
+}
+/*End desktop.*/

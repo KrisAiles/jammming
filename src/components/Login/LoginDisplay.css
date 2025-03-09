@@ -1,0 +1,69 @@
+#login {
+    box-sizing: border-box;
+    display: block;
+    margin: 3.125rem auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 0.125rem solid #66cc00;
+    border-radius: 0.9375rem;
+    text-align: center;
+    padding: 1.5625rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+#login-avatar {
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 12.5rem;
+    height: 12.5rem;
+    border: 0.125rem solid #66cc00;
+    background-color: black;
+}
+
+#login-avatar img {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 100%;
+}
+
+#login-submit {
+    margin-top: 3.125rem;
+    font-family: "Audiowide", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 2.375rem;
+    border-radius: 0.625rem;
+    border: 0.125rem solid #66cc00;
+    padding: 0 0.9375rem;
+    background-color: black;
+    color: #6600cc;
+    width: 9.375rem;
+    cursor: pointer;
+}
+
+/*Begin mobile.*/
+@media only screen and (max-width: 800px) {
+    #login {
+        width: 97%;
+        min-height: 26rem;
+    }
+}
+/*End mobile.*/
+
+/*Begin tablet.*/
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    #login {
+        width: 95%;
+        min-height: 27.1875rem;
+    }
+}
+/*End tablet.*/
+
+/*Begin desktop.*/
+@media only screen and (min-width: 1201px) {
+    #login {
+        width: 85%;
+        min-height: 25.9375rem;
+    }
+}
+/*End desktop.*/

@@ -1,0 +1,41 @@
+#login-search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3.125rem auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 0.938rem;
+    border: 0.125rem solid #66cc00;
+    box-sizing: border-box;
+}
+
+/*Begin mobile.*/
+@media only screen and (max-width: 800px) {
+    #login-search-bar {
+        width: 97%;
+        min-height: 16.375rem;
+        padding: 1.5625rem 0.625rem;
+    }
+}
+/*End mobile.*/
+
+/*Begin tablet.*/
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    #login-search-bar {
+        width: 95%;
+        min-height: 16.9375rem;
+        padding: 1.5625rem;
+    }
+}
+/*End tablet.*/
+
+/*Begin desktop.*/
+@media only screen and (min-width: 1201px) {
+    #login-search-bar {
+        width: 85%;
+        min-height: 16.75rem;
+        padding: 1.5625;
+    }
+}
+/*End desktop.*/

@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+:root {
+  font-family: "Audiowide", serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+  color-scheme: light dark;
+  color: #6600cc;
+  background-color: #0c0122;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0 0 3.125rem 0;
+  min-width: 20rem;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../public/main-background-city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#root {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  color: #6600cc;
+}
+
+a:visited {
+  color: #6600cc;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0.125rem 0.125rem #6600cc, -0.125rem -0.125rem #6600cc, -0.125rem 0.125rem #6600cc, 0.125rem -0.125rem #6600cc;
 }

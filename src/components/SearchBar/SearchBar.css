@@ -1,0 +1,104 @@
+#search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3.125rem auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 0.938rem;
+    border: 0.125rem solid #66cc00;
+    box-sizing: border-box;
+}
+
+#search {
+    box-sizing: border-box;
+    font-family: "Audiowide", serif;
+    font-size: 1.25rem;
+    color: #6600cc;
+    height: 2.375rem;
+    border-radius: 0.3125rem;
+    border: 0.125rem solid #66cc00;
+    margin-bottom: 1.5rem;
+    background-color: #0c090a;
+}
+
+#search:focus {
+    border: none;
+}
+
+#search::placeholder {
+    font-family: "Audiowide", serif;
+    color: #6600cc;
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.search-submit {
+    font-family: "Audiowide", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 2.375rem;
+    border-radius: 0.625rem;
+    border: 0.125rem solid #66cc00;
+    padding: 0 15px;
+    background-color: black;
+    color: #6600cc;
+    width: 10rem;
+    cursor: pointer;
+}
+
+/*Begin mobile.*/
+@media only screen and (max-width: 800px) {
+    #search-bar {
+        width: 97%;
+        min-height: 16.375rem;
+        padding: 1.5625rem 0.625rem;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    #search-bar p {
+        font-size: 1.25rem;
+    }
+}
+/*End mobile.*/
+
+/*Begin tablet.*/
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    #search-bar {
+        width: 95%;
+        min-height: 16.9375rem;
+        padding: 1.5625rem;
+    }
+
+    #search {
+        width: 80%;
+    }
+
+    #search-bar p {
+        font-size: 1.3125rem;
+    }
+}
+/*End tablet.*/
+
+/*Begin desktop.*/
+@media only screen and (min-width: 1201px) {
+    #search-bar {
+        width: 85%;
+        min-height: 16.75rem;
+        padding: 1.5625rem;
+    }
+
+    #search {
+        width: 80%;
+    }
+
+    #search-bar p {
+        font-size: 1.75rem;
+    }
+}
+/*End desktop.*/

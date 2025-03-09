@@ -1,0 +1,38 @@
+#login-track-display {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1.5625rem 0 0 0;
+  margin: 3.125rem auto;
+  border-radius: 0.9375rem;
+  box-sizing: border-box;
+  border: 0.125rem solid #66cc00;
+}
+
+/*Begin mobile.*/
+@media only screen and (max-width: 800px) {
+#login-track-display {
+  width: 97%;
+  min-height: 135rem;
+}
+}
+/*End mobile.*/
+
+/*Begin tablet.*/
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+#login-track-display {
+  width: 95%;
+  min-height: 71.875rem;
+}
+}
+/*End tablet.*/
+
+/*Begin desktop.*/
+@media only screen and (min-width: 1201px) {
+#login-track-display {
+  width: 85%;
+  min-height: 87.5rem;
+}
+}
+/*End desktop.*/

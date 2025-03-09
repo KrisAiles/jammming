@@ -1,0 +1,74 @@
+#playlist-display {
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 0.625rem;
+    border: 0.125rem solid #66cc00;
+    margin-bottom: 1.563rem;
+}
+
+#playlist {
+    box-sizing: border-box;
+    font-family: "Audiowide", serif;
+    font-size: 1.875rem;
+    font-weight: 400;
+    margin: 0.75rem auto 0.625rem auto;
+    padding: 0;
+    text-align: center;
+    width: 97%;
+    background-color: #0c090a;
+    color: #6600cc;
+    border: none;
+    border-radius: 0.3125rem;
+}
+
+.submit {
+    font-family: "Audiowide", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 2.375rem;
+    border-radius: 0.625rem;
+    border: 0.125rem solid #66cc00;
+    padding: 0 0.9375rem;
+    margin: 10px 0;
+    background-color: black;
+    color: #6600cc;
+    width: 10rem;
+    cursor: pointer;
+}
+
+/*Begin mobile.*/
+@media only screen and (max-width: 800px) {
+    #playlist-display {
+        width: 97%;
+        max-width: 22.5rem;
+    }
+
+    #playlist {
+        font-size: 1.625rem;
+    }
+}
+/*End mobile.*/
+
+/*Begin tablet.*/
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+    #playlist-display {
+        width: 47%;
+    }
+
+    #playlist {
+        font-size: 1.6875rem;
+    }
+}
+/*End tablet.*/
+
+/*Begin desktop.*/
+@media only screen and (min-width: 1201px) {
+    #playlist-display {
+        width: 47%;
+    }
+
+    #playlist {
+        font-size: 1.875rem;
+    }
+}
+/*End desktop.*/
