@@ -1,5 +1,5 @@
 const clientId = 'ac52f523bd854f129bfb9d813eec1a32';
-const redirectUri = 'kris-jammming-project.netlify.app';
+const redirectUri = 'https://kris-jammming-project.netlify.app';
 let params = new URLSearchParams(window.location.search);
 let code = params.get("code");
 // this function requests an access token from spotify to access the users account information, make searches and store the saved playlist
