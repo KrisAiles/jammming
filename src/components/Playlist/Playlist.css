@@ -21,6 +21,14 @@
     border-radius: 0.3125rem;
 }
 
+#playlist::placeholder {
+    font-family: "Audiowide", serif;
+    color: #6600cc;
+    opacity: 1;
+    font-weight: 400;
+    text-align: center;
+}
+
 .submit {
     font-family: "Audiowide", serif;
     font-size: 1.5rem;
@@ -46,6 +54,10 @@
     #playlist {
         font-size: 1.625rem;
     }
+
+    #playlist::placeholder {
+        font-size: 1.625rem;
+    }
 }
 /*End mobile.*/
 
@@ -58,6 +70,10 @@
     #playlist {
         font-size: 1.6875rem;
     }
+
+    #playlist::placeholder {
+        font-size: 1.6875rem;
+    }
 }
 /*End tablet.*/
 
@@ -68,6 +84,10 @@
     }
 
     #playlist {
+        font-size: 1.875rem;
+    }
+
+    #playlist::placeholder {
         font-size: 1.875rem;
     }
 }

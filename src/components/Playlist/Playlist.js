@@ -15,7 +15,7 @@ function Playlist(props) {
     }
     return (
         <div id="playlist-display">            
-            <input id="playlist" name="playlist" type="text" value={props.playlistName} onChange={props.onPlaylistChange} required />
+            <input id="playlist" name="playlist" type="text" value={props.playlistName} onChange={props.onPlaylistChange} placeholder="Enter a Playlist Name" />
             <TrackList tracks={props.playlistTracks} removeButton={true} removeTrack={props.removeTrack} />
             {renderSavebutton()}
         </div>

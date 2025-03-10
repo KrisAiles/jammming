@@ -18,7 +18,7 @@ function App() {
   const [playlistTracks, setPlaylistTracks] = useState([]);
   const [searchInput, setSearchInput] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const [playlistName, setPlaylistName] = useState("Enter a Playlist Name");
+  const [playlistName, setPlaylistName] = useState("");
   // calls a function every hour to refresh the access token so the user doesn't have to login again and stops the user from loosing any playlist data
   useEffect(() => {
     setInterval(SpotifyRefresh, 3540000, setAccessToken);
@@ -47,7 +47,7 @@ function App() {
   const handleSave = () => {
     const trackUris = playlistTracks.map((track) => track.uri);
     SpotifySavePlaylist(playlistName, userProfile, accessToken, trackUris);
-    setPlaylistName("Enter a Playlist Name");
+    setPlaylistName("");
     setPlaylistTracks([]);
   }
   // saves the search term the user types into the search box
