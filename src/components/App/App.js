@@ -68,7 +68,7 @@ function App() {
   }
   // if the page refreshes the access token will be lost and a login button will be displayed, when clicked it will request a new access token 
   const handleLogIn = () => {
-    window.location.replace('http://localhost:3000');
+    window.location.replace('https://kris-jammming-project.netlify.app');
     LogIn(setAccessToken, setUserProfile, accessToken);
   }
   // checks to see if the access token and profile data have been saved before displaying th page
