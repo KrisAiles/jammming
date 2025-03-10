@@ -47,8 +47,12 @@ function App() {
   const handleSave = () => {
     const trackUris = playlistTracks.map((track) => track.uri);
     SpotifySavePlaylist(playlistName, userProfile, accessToken, trackUris);
-    setPlaylistName("");
-    setPlaylistTracks([]);
+    if (!playlistName) {
+      return;
+    } else {
+      setPlaylistName("");
+      setPlaylistTracks([]);
+    };
   }
   // saves the search term the user types into the search box
   const handleChange = (e) => {
